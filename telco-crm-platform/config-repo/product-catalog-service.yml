@@ -1,2 +1,16 @@
-﻿# Configuration for product-catalog-service
-
+﻿spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/catalog_db
+    username: telco_admin
+    password: telco_password
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    enabled: true
+    user: telco_admin
+    password: telco_password

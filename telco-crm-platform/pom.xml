@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -110,6 +110,16 @@
                 <version>${jjwt.version}</version>
                 <scope>runtime</scope>
             </dependency>
+
+            <!-- Distributed Tracing -->
+            <dependency>
+                <groupId>io.micrometer</groupId>
+                <artifactId>micrometer-tracing-bridge-otel</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>io.zipkin.reporter2</groupId>
+                <artifactId>zipkin-reporter-brave</artifactId>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -125,17 +135,6 @@
                         <source>${java.version}</source>
                         <target>${java.version}</target>
                         <annotationProcessorPaths>
-                            <path>
-                                <groupId>org.projectlombok</groupId>
-                                <artifactId>lombok</artifactId>
-                                <version>${lombok.version}</version>
-                            </path>
-                            <!-- Lombok MapStruct Binding -->
-                            <path>
-                                <groupId>org.projectlombok</groupId>
-                                <artifactId>lombok-mapstruct-binding</artifactId>
-                                <version>0.2.0</version>
-                            </path>
                             <!-- MapStruct annotation processor -->
                             <path>
                                 <groupId>org.mapstruct</groupId>
@@ -145,20 +144,12 @@
                         </annotationProcessorPaths>
                     </configuration>
                 </plugin>
-                <!-- Spring Boot Maven Plugin for Executable Jar packaging in subservices -->
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
-                    <configuration>
-                        <excludes>
-                            <exclude>
-                                <groupId>org.projectlombok</groupId>
-                                <artifactId>lombok</artifactId>
-                            </exclude>
-                        </excludes>
-                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
     </build>
 </project>
+
