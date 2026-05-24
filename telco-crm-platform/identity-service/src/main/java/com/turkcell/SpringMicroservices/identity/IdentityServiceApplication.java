@@ -1,4 +1,4 @@
-﻿package com.turkcell.SpringMicroservices.identity;
+package com.turkcell.springmicroservices.identity;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

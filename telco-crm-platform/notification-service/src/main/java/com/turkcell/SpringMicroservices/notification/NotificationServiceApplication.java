@@ -1,4 +1,4 @@
-﻿package com.turkcell.SpringMicroservices.notification;
+package com.turkcell.springmicroservices.notification;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

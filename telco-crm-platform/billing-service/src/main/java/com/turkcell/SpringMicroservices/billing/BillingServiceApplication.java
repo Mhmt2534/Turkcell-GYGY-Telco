@@ -1,4 +1,4 @@
-﻿package com.turkcell.SpringMicroservices.billing;
+package com.turkcell.springmicroservices.billing;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

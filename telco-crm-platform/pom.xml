@@ -11,7 +11,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.turkcell.SpringMicroservices</groupId>
+    <groupId>com.turkcell.springmicroservices</groupId>
     <artifactId>telco-crm-platform</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -62,7 +62,7 @@
 
             <!-- Internal Library Module -->
             <dependency>
-                <groupId>com.turkcell.SpringMicroservices</groupId>
+                <groupId>com.turkcell.springmicroservices</groupId>
                 <artifactId>common-library</artifactId>
                 <version>${project.version}</version>
             </dependency>

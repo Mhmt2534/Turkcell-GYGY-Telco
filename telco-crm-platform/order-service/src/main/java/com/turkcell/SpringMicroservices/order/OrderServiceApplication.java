@@ -1,4 +1,4 @@
-﻿package com.turkcell.SpringMicroservices.order;
+package com.turkcell.springmicroservices.order;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.turkcell.SpringMicroservices.discoveryserver;
+package com.turkcell.springmicroservices.discoveryserver;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

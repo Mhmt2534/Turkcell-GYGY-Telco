@@ -1,4 +1,4 @@
-﻿package com.turkcell.SpringMicroservices.ticket;
+package com.turkcell.springmicroservices.ticket;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
